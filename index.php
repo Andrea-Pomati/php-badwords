@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Badwords</title>
-</head>
-<body>
-
-<h1>Inserisci il testo!</h1>
-
-
-<form action="soluzione.php" method="GET">
-   
-    <input type="textarea" placeholder="paragrafo" name="paragrafo" required>
-    <input type="text" name="parola" placeholder="parola" required>
-    <button type="submit">Invia i dati</button>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <form action="censor.php" method="GET">
+ 
+    <textarea name="paragraph" id="paragraph" cols="30" rows="10">
+    </textarea>
+    <br>
+    <input name="badword" type="text" placeholder="Parola da censurare">
+    <button type="submit">Invia</button>
   </form>
-
-
-
 </body>
 </html>
